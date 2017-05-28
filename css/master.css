@@ -65,7 +65,7 @@ footer {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-rows: 500px 2410px auto;
+  grid-template-rows: 500px 2420px auto;
   grid-template-columns: auto;
   grid-gap: 0;
   grid-template-areas:
