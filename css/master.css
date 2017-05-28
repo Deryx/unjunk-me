@@ -5,7 +5,7 @@ html, body {
   font-family: "PT Sans", sans-serif;
 }
 
-.container > header {
+.container header {
   background: url(images/junk-king.png) no-repeat center;
   background-size: cover;
 }
