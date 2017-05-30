@@ -29,7 +29,7 @@ html, body {
   height: 125px;
   margin: 0 auto;
   padding: 20px;
-  background: rgb(255, 0, 0);
+  background: rgb(245,42,27);
 }
 
 .marquee header div:nth-of-type(2) {
@@ -50,7 +50,7 @@ html, body {
 
 .marquee header nav ul li {
   display: inline-table;
-  margin: 10px 12px;
+  margin: 10px 48px;
 }
 
 .marquee header nav ul li a {
@@ -87,7 +87,7 @@ html, body {
   margin-bottom: 10px;
   font-size: 130%;
   text-transform: capitalize;
-  color: rgb(189,145,48);
+  color: rgb(187,141,39);
 }
 
 .everything div:nth-child(1) h1 {
@@ -125,6 +125,11 @@ html, body {
   margin-bottom: 10px;
 }
 
+.everything div:nth-child(2) form div:nth-of-type(1) {
+  margin: 0;
+  padding: 0;
+}
+
 .everything div:nth-child(2) form div:nth-child(4) input {
   width: 48.5%;
 }
@@ -152,6 +157,7 @@ html, body {
 .works div:nth-child(1) {
   background: rgb(245,42,27);
   color: rgb(255, 255, 255);
+  padding-bottom: 30px;
 }
 
 .works div:nth-child(1) div {
@@ -191,6 +197,14 @@ html, body {
   text-align: center;
 }
 
+.works div:nth-child(3) p {
+  font-size: 80%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .news div:nth-child(1) h1 {
   color: rgb(255, 0, 0);
   font-weight: 800;
@@ -210,15 +224,62 @@ html, body {
   padding-top: 30px;
 }
 
-.news div:nth-child(2) div:nth-of-type(2) {
+.news div:nth-child(2) > div:nth-of-type(1) {
+  margin-top: 20px;
+  background: rgb(240, 240, 240);
+  padding: 10px;
+}
+
+.news div:nth-child(2) > div:nth-of-type(1) h2 {
+  font-weight: 800;
+}
+
+.news div:nth-child(2) > div:nth-of-type(1) h4 {
+  font-weight: 800;
+  color: rgb(255, 0, 0);
+  margin-bottom: 0;
+}
+
+.news div:nth-child(2) > div:nth-of-type(1) p {
+  font-size: 120%;
+}
+
+.news div:nth-child(2) > div:nth-of-type(1) article {
+  border: none;
+}
+
+.news div:nth-child(2) > div:nth-of-type(1) h5 {
+  font-weight: 800;
+}
+
+.news div:nth-child(2) > div:nth-of-type(1) button {
+  background: rgb(255, 0, 0);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-weight: 700;
   margin-top: 30px;
 }
 
+.news div:nth-child(2) div:nth-of-type(2) {
+  margin-top: 30px;
+  margin: 0;
+}
+
+.news div:nth-child(2) div:nth-of-type(2) div:nth-child(1) {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+}
+
 .news div:nth-child(2) div:nth-of-type(2) .row {
+  margin: 0;
   margin-bottom: 10px;
+  background: none;
 }
 
 .news div:nth-child(2) div:nth-of-type(2) .row img{
+  margin-bottom: 10px;
   margin-left: 10px;
 }
 
