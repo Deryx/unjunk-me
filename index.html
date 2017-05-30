@@ -15,7 +15,31 @@
   <body>
 
     <div class="container">
-      <section class="marquee" id="jssor_1">
+      <section class="marquee">
+        <div class="slideshow-container">
+          <div class="mySlides slide">
+            <img src="images/slider-1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides slide">
+            <img src="images/slider-2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides slide">
+            <img src="images/slider-3.jpg" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></a>
+          <a class="next" onclick="plusSlides(1)"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
         <header class="col-md-9 col-centered">
           <div class="col-md-4">
             <img src="images/Junk Logo-header.png" alt="UnJunkMe logo">
@@ -236,13 +260,53 @@
             <h3>Our Locations</h3>
           </header>
           <div class="row">
-
+            <div class="col-xs-2">
+              <ul>
+                <li>atlantic county</li>
+                <li>bergen county</li>
+                <li>burlington county</li>
+                <li>camden county</li>
+              </ul>
+            </div>
+            <div class="col-xs-2">
+              <ul>
+                <li>cape may county</li>
+                <li>cumberland county</li>
+                <li>essex county</li>
+                <li>gloucester county</li>
+              </ul>
+            </div>
+            <div class="col-xs-2">
+              <ul>
+                <li>hudson county</li>
+                <li>hunterdon county</li>
+                <li>mercer county</li>
+                <li>middlesex county</li>
+              </ul>
+            </div>
+            <div class="col-xs-2">
+              <ul>
+                <li>monmouth county</li>
+                <li>morris county</li>
+                <li>ocean county</li>
+                <li>passaic county</li>
+              </ul>
+            </div>
+            <div class="col-xs-2">
+              <ul>
+                <li>salem county</li>
+                <li>somerset county</li>
+                <li>union county</li>
+                <li>warren county</li>
+              </ul>
+            </div>
           </div>
         </article>
       </footer>
     </div>
 
     <!-- JavaScript -->
+    <script src="js/app.js" type="text/javascript"></script>
     <script src="js/jssor.slider-24.0.1.min.js" type="text/javascript"></script>
   </body>
 </html>
