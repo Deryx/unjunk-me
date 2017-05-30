@@ -62,7 +62,7 @@ html, body {
   border: 15px solid rgb(255, 255, 255);
   margin-top: -70px;
   padding: 0;
-  height: 2450px;
+  height: 2500px;
 }
 
 .main .content header {
@@ -178,6 +178,18 @@ html, body {
   font-size: 175%;
 }
 
+.works div:nth-child(2) h1 {
+  font-weight: 800;
+}
+
+.works div:nth-child(2) p {
+  font-size: 125%;
+}
+
+.works div:nth-child(2) span {
+  color: rgb(187,141,39);
+}
+
 .works div:nth-child(3) h1 {
   font-weight: 800;
   color: rgb(255, 255, 255);
@@ -208,6 +220,16 @@ html, body {
 .news div:nth-child(1) h1 {
   color: rgb(255, 0, 0);
   font-weight: 800;
+}
+
+.news div:nth-child(1) h4 {
+  margin-top: 30px;
+  font-weight: 800;
+}
+
+.news div:nth-child(1) p {
+  font-size: 115%;
+  line-height: 1.5;
 }
 
 .news div:nth-child(1) span {
