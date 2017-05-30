@@ -56,6 +56,38 @@ html, body {
 .marquee header nav ul li a {
   color: rgb(255, 255, 255);
   font-size: 150%;
+  text-decoration: none;
+}
+
+.marquee header nav ul li ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.marquee header nav ul li:hover ul {
+  display: block;
+  z-index: 99;
+  position: absolute;
+  margin-left: -150px;
+}
+
+.marquee header nav ul li ul li {
+  display: block;
+  margin: 0;
+  padding: 5px 15px;
+  background: rgb(245,42,27);
+  text-align: left;
+}
+
+.marquee header nav ul li ul li a {
+  text-decoration: none;
+  display: block;
+}
+
+.marquee header nav ul li ul li a:hover {
+  color: rgb(187,141,39);
 }
 
 .main {
