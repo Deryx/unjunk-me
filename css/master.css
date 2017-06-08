@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100
+  width: 100;
   font-family: "PT Sans", sans-serif;
 }
 
@@ -16,10 +16,17 @@ html, body {
   width: 100%;
 }
 
-.container .marquee {
+.container .marquee, .inner-marquee {
   width: 100%;
   height: 457px;
   position: relative;
+}
+
+.container .inner-marquee {
+  background-image: url(../images/slider-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 // *********** BEGIN SLIDESHOW CSS ***********
@@ -98,9 +105,9 @@ html, body {
     width: 100%;
     height:457px;
     -webkit-animation-name: slide;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 4s;
     animation-name: slide;
-    animation-duration: 2s;
+    animation-duration: 4s;
 }
 
 @-webkit-keyframes slide {
@@ -111,24 +118,21 @@ html, body {
     100% { left: 0; }
 }
 // ********** END SLIDESHOW CSS **********
+// ********** END SLIDESHOW CSS **********
+
+.marquee header div:nth-of-type(2) {
+  text-align: right;
+}
 
 .marquee header {
-  height: 125px;
-  margin: 0 auto;
-  padding: 20px;
-  background: rgb(245,42,27);
+  background: rgb(237,28,36);
+  z-index: 98;
   position: absolute;
-  z-index: 97;
   top: 0;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-}
-// ********** END SLIDESHOW CSS **********
-
-.marquee header div:nth-of-type(2) {
-  text-align: right;
 }
 
 .marquee header p {
@@ -165,14 +169,14 @@ html, body {
   display: block;
   z-index: 99;
   position: absolute;
-  margin-left: -150px;
+  margin-left: -100px;
 }
 
 .marquee header nav ul li ul li {
   display: block;
   margin: 0;
   padding: 5px 15px;
-  background: rgb(245,42,27);
+  background: rgb(237,28,36);
   text-align: left;
 }
 
@@ -185,11 +189,80 @@ html, body {
   color: rgb(187,141,39);
 }
 
+.inner-marquee header {
+  background: rgb(237,28,36);
+  z-index: 98;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-marquee header div:nth-of-type(2) {
+  text-align: right;
+}
+
+.inner-marquee header p {
+  color: rgb(255, 255, 255);
+  font-size: 175%;
+  font-weight: 800;
+}
+
+.inner-marquee header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-marquee header nav ul li {
+  display: inline-table;
+  margin: 10px 20px;
+}
+
+.inner-marquee header nav ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+  text-decoration: none;
+}
+
+.inner-marquee header nav ul li ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-marquee header nav ul li:hover ul {
+  display: block;
+  z-index: 99;
+  position: absolute;
+  margin-left: -100px;
+}
+
+.inner-marquee header nav ul li ul li {
+  display: block;
+  margin: 0;
+  padding: 5px 15px;
+  background: rgb(237,28,36);
+  text-align: left;
+}
+
+.inner-marquee header nav ul li ul li a {
+  text-decoration: none;
+  display: block;
+}
+
+.inner-marquee header nav ul li ul li a:hover {
+  color: rgb(187,141,39);
+}
+
 .main {
   border: 15px solid rgb(255, 255, 255);
   margin-top: -70px;
   padding: 0;
-  height: 2500px;
+  min-height: 600px;
   background: rgb(255, 255, 255);
 }
 
@@ -212,7 +285,7 @@ html, body {
   margin: 10px;
 }
 
-.works, .everything, .news, footer {
+.works, .everything, .news, .price, .take, footer {
   clear: both;
 }
 
@@ -225,7 +298,7 @@ html, body {
 
 .everything div:nth-child(1) h1 {
   color: rgb(255, 0, 0);
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .everything div:nth-child(1) span {
@@ -434,6 +507,193 @@ html, body {
 
 .news div:nth-child(2) div:nth-of-type(2) div div img {
   width: 180px;
+}
+
+.price {
+  font-family: "PT Sans", sans-serif;
+}
+
+.price h1 {
+  color: rgb(237,28,36);
+  font-weight: 900;
+}
+
+.price p {
+  font-size: 1.25em;
+}
+
+.price h3 {
+  color: rgb(88,88,88);
+  font-weight: 900;
+}
+
+.price div:nth-child(1) .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.price div:nth-child(1) .col-md-3 {
+  font-size: 1.5em;
+}
+
+.price div:nth-child(1) .col-md-8 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  background: none;
+}
+
+.price div:nth-child(1) .col-md-8 ul {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6em;
+}
+
+.price div:nth-child(2) {
+  margin-top: 20px;
+  background: rgb(0, 0, 0);
+  padding: 15px;
+}
+
+.price div:nth-child(2) form h4 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 800;
+}
+
+.price div:nth-child(2) form div:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.price div:nth-child(2) form input {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 80%;
+  width: 98%;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.price div:nth-child(2) form div:nth-of-type(1) {
+  margin: 0;
+  padding: 0;
+}
+
+.price div:nth-child(2) form div:nth-child(4) input {
+  width: 48.5%;
+}
+
+.price div:nth-child(2) form div:nth-child(6) input {
+  width: 32%;
+}
+
+.price div:nth-child(2) form div:nth-child(6) select {
+  width: 65%;
+  padding: 8.5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.price div:nth-child(2) button {
+  background: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-top: 10px;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+.take {
+  font-family: "PT Sans", sans-serif;
+}
+
+.take h1 {
+  color: rgb(237,28,36);
+  font-weight: 900;
+}
+
+.take h3 {
+  color: rgb(88,88,88);
+  font-weight: 900;
+}
+
+.take div:nth-child(1) p {
+  font-size: 1.25em;
+}
+
+.take div:nth-child(1) .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.take div:nth-child(1) .col-md-6 {
+  margin: 0 15px;
+  padding: 0;
+  background: none;
+}
+
+.take div:nth-child(1) .col-md-6 ul {
+  margin: 15px;
+  padding: 0;rgb(210,155,39);
+  font-size: 1.2em;
+  color: rgb(210,155,39);
+}
+
+.take div:nth-child(2) {
+  margin-top: 20px;
+  background: rgb(0, 0, 0);
+  padding: 15px;
+}
+
+.take div:nth-child(2) form h4 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: 800;
+}
+
+.take div:nth-child(2) form div:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.take div:nth-child(2) form input {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 80%;
+  width: 98%;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.take div:nth-child(2) form div:nth-of-type(1) {
+  margin: 0;
+  padding: 0;
+}
+
+.take div:nth-child(2) form div:nth-child(4) input {
+  width: 48.5%;
+}
+
+.take div:nth-child(2) form div:nth-child(6) input {
+  width: 32%;
+}
+
+.take div:nth-child(2) form div:nth-child(6) select {
+  width: 65%;
+  padding: 8.5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.take div:nth-child(2) button {
+  background: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-top: 10px;
+  padding: 5px 15px;
+  font-weight: bold;
 }
 
 footer {
