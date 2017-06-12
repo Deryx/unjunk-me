@@ -135,6 +135,10 @@ html, body {
   margin-right: auto;
 }
 
+.marquee header div:nth-of-type(2) {
+  text-align: right;
+}
+
 .marquee header p {
   color: rgb(255, 255, 255);
   font-size: 175%;
