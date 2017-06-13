@@ -359,8 +359,22 @@ html, body {
   padding: 5px 15px;
   font-weight: bold;
 }
+
 .works, .everything, .news, .price, .take, footer {
   clear: both;
+}
+
+.everything div:nth-child(1) div {
+  background: rgb(255, 255, 255);
+}
+
+.everything div:nth-child(1) div > div:nth-child(2) ul {
+  margin-top: -40px;
+}
+
+.everything ul {
+  margin: 0;
+  padding: 0;
 }
 
 .everything ul li {
