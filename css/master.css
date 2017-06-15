@@ -195,6 +195,10 @@ html, body {
   color: rgb(187,141,39);
 }
 
+.marquee header span {
+  font-size: 90%;
+}
+
 .inner-marquee header {
   background: rgb(237,28,36);
   z-index: 98;
