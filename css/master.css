@@ -141,9 +141,10 @@ html, body {
   text-align: right;
 }
 
-.marquee header p {
+.marquee header div:nth-of-type(2) p {
   color: rgb(255, 255, 255);
-  font-size: 175%;
+  font-size: 250%;
+  letter-spacing: 2px;
   font-weight: 800;
 }
 
@@ -321,38 +322,13 @@ html, body {
   font-weight: 800;
 }
 
-.about div:nth-child(2) form div:nth-child(2) {
+.about div:nth-child(2) p {
   margin-top: 0;
-  margin-bottom: 0;
-}
-
-.about div:nth-child(2) form input {
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 80%;
-  width: 98%;
-  border: none;
-  margin-bottom: 10px;
-}
-
-.about div:nth-child(2) form div:nth-of-type(1) {
-  margin: 0;
-  padding: 0;
-}
-
-.about div:nth-child(2) form div:nth-child(4) input {
-  width: 48.5%;
-}
-
-.about div:nth-child(2) form div:nth-child(6) input {
-  width: 32%;
-}
-
-.about div:nth-child(2) form div:nth-child(6) select {
-  width: 65%;
-  padding: 8.5px;
-  border: none;
-  border-radius: 5px;
+  margin-bottom: 30px;
+  font-size: 150%;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
 }
 
 .about div:nth-child(2) button {
@@ -403,44 +379,13 @@ html, body {
   padding: 15px;
 }
 
-.everything div:nth-child(2) form h4 {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-weight: 800;
-}
-
-.everything div:nth-child(2) form div:nth-child(2) {
+.everything div:nth-child(2) p {
   margin-top: 0;
-  margin-bottom: 0;
-}
-
-.everything div:nth-child(2) form input {
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 80%;
-  width: 98%;
-  border: none;
-  margin-bottom: 10px;
-}
-
-.everything div:nth-child(2) form div:nth-of-type(1) {
-  margin: 0;
-  padding: 0;
-}
-
-.everything div:nth-child(2) form div:nth-child(4) input {
-  width: 48.5%;
-}
-
-.everything div:nth-child(2) form div:nth-child(6) input {
-  width: 32%;
-}
-
-.everything div:nth-child(2) form div:nth-child(6) select {
-  width: 65%;
-  padding: 8.5px;
-  border: none;
-  border-radius: 5px;
+  margin-bottom: 30px;
+  font-size: 150%;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
 }
 
 .everything div:nth-child(2) button {
@@ -451,6 +396,7 @@ html, body {
   padding: 5px 15px;
   font-weight: bold;
 }
+
 .works div:nth-child(1) {
   background: rgb(245,42,27);
   color: rgb(255, 255, 255);
@@ -537,6 +483,15 @@ html, body {
   font-size: 135%;
 }
 
+.work div:nth-child(1) p {
+  font-size: 150%;
+}
+
+.work div:nth-child(1) h2 {
+  color: rgb(245,42,27);
+  font-weight: 900;
+}
+
 .work div:nth-child(1) h1 {
   font-weight: 800;
   margin-bottom: 0;
@@ -592,48 +547,13 @@ html, body {
   padding: 15px;
 }
 
-.work div:nth-child(2) form h4 {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-weight: 800;
-}
-
-.work div:nth-child(2) form div:nth-child(2) {
+.work div:nth-child(2) p {
   margin-top: 0;
-  margin-bottom: 0;
-}
-
-.work div:nth-child(2) form input {
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 80%;
-  width: 98%;
-  border: none;
-  margin-bottom: 10px;
-}
-
-.work div:nth-child(2) form div:nth-of-type(1) {
-  margin: 0;
-  padding: 0;
-}
-
-.work div:nth-child(2) form div:nth-of-type(2) {
-  background: none;
-}
-
-.work div:nth-child(2) form div:nth-child(4) input {
-  width: 48.5%;
-}
-
-.work div:nth-child(2) form div:nth-child(6) input {
-  width: 32%;
-}
-
-.work div:nth-child(2) form div:nth-child(6) select {
-  width: 65%;
-  padding: 8.5px;
-  border: none;
-  border-radius: 5px;
+  margin-bottom: 30px;
+  font-size: 150%;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
 }
 
 .work div:nth-child(2) button {
@@ -765,8 +685,13 @@ html, body {
   flex-direction: row;
 }
 
-.price div:nth-child(1) .col-md-3 {
+.price div:nth-child(1) .row:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+.price div:nth-child(1) .col-md-4 {
   font-size: 1.5em;
+  color: rgb(237,28,36);
 }
 
 .price div:nth-child(1) .col-md-8 {
@@ -781,6 +706,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-size: 1.6em;
+  clear: right;
 }
 
 .price div:nth-child(2) {
@@ -789,44 +715,13 @@ html, body {
   padding: 15px;
 }
 
-.price div:nth-child(2) form h4 {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-weight: 800;
-}
-
-.price div:nth-child(2) form div:nth-child(2) {
+.price div:nth-child(2) p {
   margin-top: 0;
-  margin-bottom: 0;
-}
-
-.price div:nth-child(2) form input {
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 80%;
-  width: 98%;
-  border: none;
-  margin-bottom: 10px;
-}
-
-.price div:nth-child(2) form div:nth-of-type(1) {
-  margin: 0;
-  padding: 0;
-}
-
-.price div:nth-child(2) form div:nth-child(4) input {
-  width: 48.5%;
-}
-
-.price div:nth-child(2) form div:nth-child(6) input {
-  width: 32%;
-}
-
-.price div:nth-child(2) form div:nth-child(6) select {
-  width: 65%;
-  padding: 8.5px;
-  border: none;
-  border-radius: 5px;
+  margin-bottom: 30px;
+  font-size: 150%;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
 }
 
 .price div:nth-child(2) button {
@@ -869,7 +764,7 @@ html, body {
 
 .take div:nth-child(1) .col-md-6 ul {
   margin: 15px;
-  padding: 0;rgb(210,155,39);
+  padding: 0;
   font-size: 1.2em;
   color: rgb(210,155,39);
 }
@@ -880,44 +775,13 @@ html, body {
   padding: 15px;
 }
 
-.take div:nth-child(2) form h4 {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-weight: 800;
-}
-
-.take div:nth-child(2) form div:nth-child(2) {
+.take div:nth-child(2) p {
   margin-top: 0;
-  margin-bottom: 0;
-}
-
-.take div:nth-child(2) form input {
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 80%;
-  width: 98%;
-  border: none;
-  margin-bottom: 10px;
-}
-
-.take div:nth-child(2) form div:nth-of-type(1) {
-  margin: 0;
-  padding: 0;
-}
-
-.take div:nth-child(2) form div:nth-child(4) input {
-  width: 48.5%;
-}
-
-.take div:nth-child(2) form div:nth-child(6) input {
-  width: 32%;
-}
-
-.take div:nth-child(2) form div:nth-child(6) select {
-  width: 65%;
-  padding: 8.5px;
-  border: none;
-  border-radius: 5px;
+  margin-bottom: 30px;
+  font-size: 150%;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
 }
 
 .take div:nth-child(2) button {
@@ -986,6 +850,27 @@ html, body {
   margin-top: 20px;
   background: rgb(255, 255, 255);
   padding: 15px;
+}
+
+.contact div:nth-child(2) img {
+  border: 10px solid rgb(0, 0, 0);
+}
+
+.contact div:nth-child(2) .row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+}
+
+.contact div:nth-child(2) .row div {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.contact div:nth-child(2) p {
+  text-align: justify;
+  font-size: 125%;
 }
 
 .contact div:nth-child(2) form h4 {
