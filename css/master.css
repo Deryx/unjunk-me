@@ -922,6 +922,11 @@ html, body {
   font-weight: bold;
 }
 
+.clientele img {
+  padding: 2px;
+  border: 10px solid rgb(0, 0, 0);
+}
+
 footer {
   background: rgb(245,42,27);
   color: rgb(255, 255, 255);
